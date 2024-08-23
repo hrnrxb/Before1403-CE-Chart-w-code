@@ -40,14 +40,14 @@ body {
 /* General Styles */
 .header {
     margin-top: 20px;
-    color: #940a0a; /* Red header text */
+    color: #0a0000; /* Red header text */
     font-size: 1.5rem; /* Use relative units */
     font-weight: bold;
 }
 
 .sub-header {
     margin-top: 10px;
-    color: #940a0a; /* Red sub-header text */
+    color: #0a0000; /* Red sub-header text */
     font-size: 1.25rem; /* Use relative units */
     font-weight: bold;
 }
