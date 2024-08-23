@@ -468,22 +468,22 @@
     </div>
 
     <script>
-    function copyToClipboard(code, button) {
-        const el = document.createElement('textarea');
-        el.value = code;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
-
-        // Change button color to red
-        button.style.backgroundColor = 'red';
-
-        // Change button color back to green after 2 seconds
-        setTimeout(function() {
-            button.style.backgroundColor = '#28a745';
-        }, 2000);
-    }
+        function copyToClipboard(code, button) {
+            const el = document.createElement('textarea');
+            el.value = code;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+    
+            // Change button color to red
+            button.style.backgroundColor = 'red';
+    
+            // Change button color back to green after 2 seconds
+            setTimeout(function() {
+                button.style.backgroundColor = '#28a745';
+            }, 2000);
+        }
     </script>
 
 </body>
