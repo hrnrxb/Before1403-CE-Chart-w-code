@@ -6,6 +6,7 @@ body {
     padding: 0;
     text-align: center;
     color: #333;
+    direction: rtl; /* Set text direction to RTL */
 }
 
 .header {
@@ -69,11 +70,12 @@ body {
     background-color: #f9f9f9;
     border-radius: 5px;
     font-size: 20px;
-    font-family: 'IranSans', sans-serif; /* Changed font for course names */
+    font-family: 'IranSans', sans-serif; /* Font for course names */
 }
 
 .course-item span {
-    margin-right: 24px; /* Space for the button */
+    margin-left: 24px; /* Space for the button on the left side */
+    margin-right: 0; /* Remove right margin */
 }
 
 .copy-button {
