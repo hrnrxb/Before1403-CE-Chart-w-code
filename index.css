@@ -104,8 +104,6 @@ body {
     line-height: 1.5;
 }
 
-}
-
 .copy-button:hover {
     background-color: #218838; /* Darker green on hover */
 }
