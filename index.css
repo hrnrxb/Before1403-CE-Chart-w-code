@@ -110,7 +110,7 @@ body {
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
     width: auto; /* Allow the width to fit the content */
-    text-align: center; /* Center the text horizontally */
+    text-align: center; /* Center the text Horizontally */
 }
 
 .copy-button:hover {
