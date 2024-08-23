@@ -159,13 +159,15 @@ body {
     vertical-align: middle;
     line-height: 1;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .copy-button span {
     display: inline-block; /* Ensure the span behaves like inline block */
     vertical-align: middle; /* Align text vertically in case of discrepancies */
     margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .copy-button:hover {
