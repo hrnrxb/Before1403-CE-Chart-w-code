@@ -466,27 +466,26 @@
         </div>
     </div>
 
-<script>
-document.querySelectorAll('.copy-button').forEach(button => {
-    button.addEventListener('click', function() {
-        // Select the code content to copy
-        const codeContent = this.closest('.course-item').querySelector('code').textContent;
-
-        // Copy the code content to clipboard
-        navigator.clipboard.writeText(codeContent).then(() => {
-            const courseItem = this.closest('.course-item');
-            courseItem.classList.add('copied');
-
-            // Remove the 'copied' class after 2 seconds
-            setTimeout(() => {
-                courseItem.classList.remove('copied');
-            }, 2000);
-        }).catch(err => {
-            console.error('Failed to copy: ', err);
+    <script>
+    document.querySelectorAll('.copy-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Find the code content to copy
+            const codeContent = this.closest('.course-item').querySelector('code').textContent;
+    
+            // Copy the code content to clipboard
+            navigator.clipboard.writeText(codeContent).then(() => {
+                const courseItem = this.closest('.course-item');
+                courseItem.classList.add('copied');
+    
+                // Remove the 'copied' class after 2 seconds
+                setTimeout(() => {
+                    courseItem.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
         });
     });
-});
-</script>
-
+    </script>
 </body>
 </html>
