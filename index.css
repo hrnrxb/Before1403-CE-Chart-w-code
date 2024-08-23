@@ -1,0 +1,122 @@
+/* index.css */
+
+/* General Styles */
+body {
+    font-family: 'XB Zar', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+.header {
+    margin-top: 20px;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sub-header {
+    margin-top: 10px;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sub-header a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.sub-header a:hover {
+    text-decoration: underline;
+}
+
+.course-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+}
+
+.course-category {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.copy-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.copy-button:hover {
+    background-color: darkgreen;
+}
+
+.course-code {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.course-code:hover {
+    background-color: darkgreen;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .course-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .copy-button {
+        position: static;
+        margin-top: 10px;
+    }
+}
