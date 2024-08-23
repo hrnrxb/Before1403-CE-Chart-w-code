@@ -74,21 +74,21 @@ body {
 .header {
     margin-top: 20px;
     color: #0a0000; /* Red header text */
-    font-size: 1rem; /* Use relative units */
+    font-size: 1.1rem; /* Use relative units */
     font-weight: 900;
 }
 
 .sub-header {
     margin-top: 10px;
     color: #0a0000; /* Red sub-header text */
-    font-size: 0.8rem; /* Use relative units */
+    font-size: 1rem; /* Use relative units */
     font-weight: 900;
 }
 
 .sub-header a {
     color: #940a0a; /* Red links */
     text-decoration: none;
-    font-size: 0.8rem; /* Use relative units */
+    font-size: 0.9rem; /* Use relative units */
     font-weight: 750;
     margin: 0 10px;
 }
