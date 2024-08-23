@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'IranSans';
-    src: url('/fonts/IranSans.woff2') format('woff2'),
-         url('/fonts/IranSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css?family=Vazirmatn:wght@100..900&display=swap');
 
 /* Ensure html and body cover full viewport */
 html, body {
@@ -14,7 +8,7 @@ html, body {
 
 /* Background Styles */
 body {
-    font-family: 'IranSans', sans-serif;
+    font-family: Vazirmatn, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -133,7 +127,7 @@ body {
     background-color: #f9f9f9;
     border-radius: 5px;
     font-size: 1.25rem; /* Use relative units */
-    font-family: 'IranSans', sans-serif;
+    font-family: Vazirmatn, sans-serif;
 }
 
 .course-item span {
