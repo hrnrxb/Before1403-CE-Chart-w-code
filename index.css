@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'IranSans';
-    src: url('https://github.com/IAUCourseExp/IAUCourseExp.github.io/raw/main/IRANSans-web.woff') format('woff');
+    src: url('/fonts/IranSans.woff2') format('woff2'),
+         url('/fonts/IranSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,24 +10,19 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'IranSans', sans-serif; /* Apply IranSans font globally */
 }
 
 /* Background Styles */
 body {
     font-family: 'IranSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    direction: rtl; /* Set text direction to RTL */
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-.header, .sub-header, .course-item {
-    font-family: 'IranSans', sans-serif;
 }
 
 @keyframes gradient {
@@ -43,81 +39,176 @@ body {
 
 /* Style for the informational box */
 .info-box {
-    background-color: #c7c87e; /* Light yellow background */
+    background-color: #ffffe0; /* Light yellow background */
     color: #333; /* Dark text for contrast */
-    padding: 10px; /* Padding inside the box */
-    margin-bottom: 15px; /* Space below the box */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center text */
-}
-
-/* Style for the course container */
-.course-container {
-    height: 80vh; /* Adjust the height as needed */
-    overflow: hidden; /* Hide overflow in the outer container */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* White background for the container */
-    padding: 10px; /* Padding inside the container */
-    position: relative; /* Position relative for inner div */
-}
-
-/* Inner scrollable container */
-.course-container > .scrollable-content {
-    height: 100%;
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-}
-
-/* Style for course categories and items */
-.course-category {
-    font-size: 20px;
+    padding: 15px;
+    margin: 20px auto; /* Center the box horizontally with margin auto */
+    border-radius: 8px;
+    font-size: 1.1rem; /* Adjust font size for readability */
     font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center; /* Center text */
+    max-width: 80%; /* Limit width to 80% of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+/* Responsive Design for the info box */
+@media (max-width: 768px) {
+    .info-box {
+        font-size: 1rem; /* Adjust font size on smaller screens */
+        padding: 10px; /* Adjust padding */
+        max-width: 90%; /* Slightly increase width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        font-size: 0.9rem; /* Further adjust font size */
+        padding: 8px; /* Further adjust padding */
+        max-width: 95%; /* Further increase width for very small screens */
+    }
+}
+
+
+/* General Styles */
+.header {
+    margin-top: 20px;
+    color: #0a0000; /* Red header text */
+    font-size: 1.5rem; /* Use relative units */
+    font-weight: 900;
+}
+
+.sub-header {
+    margin-top: 10px;
+    color: #0a0000; /* Red sub-header text */
+    font-size: 1.25rem; /* Use relative units */
+    font-weight: 900;
+}
+
+.sub-header a {
+    color: #940a0a; /* Red links */
+    text-decoration: none;
+    font-size: 1.25rem; /* Use relative units */
+    font-weight: 750;
+    margin: 0 10px;
+}
+
+.sub-header a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.course-container {
+    width: 90%; /* Use percentage-based width */
+    max-width: 1200px; /* Limit maximum width for large screens */
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+}
+
+.course-category {
+    font-size: 1.6rem; /* Use relative units */
+    font-weight: bold;
+    margin: 20px 0;
+    border-bottom: 2px solid #28a745; /* Green border */
+    padding-bottom: 10px;
 }
 
 .course-item {
-    margin-bottom: 5px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Ensure items are spaced between */
     align-items: center;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 1.25rem; /* Use relative units */
+    font-family: 'IranSans', sans-serif;
+}
+
+.course-item span {
+    margin-left: 24px;
+    margin-right: 0;
 }
 
 .copy-button {
-    background-color: #28a745;
-    border: none;
+    background-color: #28a745; /* Green button */
     color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    border: none;
+    padding: 5px;
+    font-size: 0.9rem;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+    white-space: nowrap;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
 }
 
-/* Button hover and active states */
 .copy-button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green on hover */
 }
 
-.copy-button:active {
-    background-color: #1e7e34;
-}
-
-/* Additional styles for overall layout and responsiveness */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        font-size: 1.25rem; /* Adjust header size */
+    }
+
+    .sub-header {
+        font-size: 1.1rem; /* Adjust sub-header size */
+    }
+
     .course-category {
-        font-size: 18px;
+        font-size: 1.4rem; /* Adjust category size */
+    }
+
+    .course-container {
+        width: 95%; /* Slightly increase width for small screens */
+        padding: 15px;
+    }
+
+    .course-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to start */
     }
 
     .copy-button {
-        font-size: 14px;
-        padding: 4px 8px;
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.1rem; /* Further adjust header size */
+    }
+
+    .sub-header {
+        font-size: 1rem; /* Further adjust sub-header size */
+    }
+
+    .course-category {
+        font-size: 1.2rem; /* Further adjust category size */
+    }
+
+    .course-item {
+        font-size: 1rem; /* Further adjust course item size */
+    }
+
+    .copy-button {
+        font-size: 0.85rem; /* Adjust button size */
     }
 }
