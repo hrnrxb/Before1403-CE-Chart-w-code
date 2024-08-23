@@ -53,7 +53,7 @@ body {
     z-index: 10; /* Ensure the box stays above other content */
     width: 100%; /* Full width of its container */
     background: linear-gradient(135deg, #ffffe0 0%, #f9f9f9 100%); /* Gradient background for visual interest */
-    opacity: 0.6; /* Adjust opacity here (0.0 - fully transparent, 1.0 - fully opaque) */
+    opacity: 0.95; /* Adjust opacity here (0.0 - fully transparent, 1.0 - fully opaque) */
 }
 
 /* Adjustments for responsiveness */
