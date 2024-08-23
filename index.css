@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'IranSans';
-    src: url('https://github.com/IAUCourseExp/IAUCourseExp.github.io/blob/main/IRANSans-web.woff') format('woff');
+    src: url('https://github.com/IAUCourseExp/IAUCourseExp.github.io/raw/main/IRANSans-web.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,11 +16,17 @@ html, body {
 
 /* Background Styles */
 body {
+    font-family: 'IranSans', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    margin: 0;
+    padding: 0;
     color: #333;
-    direction: rtl; /* Set text direction to RTL */
+}
+
+.header, .sub-header, .course-item {
+    font-family: 'IranSans', sans-serif;
 }
 
 @keyframes gradient {
