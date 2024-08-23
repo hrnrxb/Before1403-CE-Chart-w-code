@@ -1,9 +1,7 @@
-/* index.css */
-
 /* General Styles */
 body {
     font-family: 'XB Zar', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e9ecef; /* Light gray background */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,20 +10,20 @@ body {
 
 .header {
     margin-top: 20px;
-    color: #003366; /* Darker blue for a more elegant look */
+    color: #007bff; /* Blue header text */
     font-size: 24px;
     font-weight: bold;
 }
 
 .sub-header {
     margin-top: 10px;
-    color: #003366; /* Darker blue for consistency */
+    color: #007bff; /* Blue sub-header text */
     font-size: 20px;
     font-weight: bold;
 }
 
 .sub-header a {
-    color: #003366; /* Darker blue for consistency */
+    color: #007bff; /* Blue links */
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -34,7 +32,7 @@ body {
 
 .sub-header a:hover {
     text-decoration: underline;
-    color: #0056b3; /* Slightly lighter blue on hover */
+    color: #0056b3; /* Darker blue on hover */
 }
 
 .course-container {
@@ -43,7 +41,7 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow-y: auto;
     max-height: 80vh;
@@ -54,7 +52,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     margin: 20px 0;
-    border-bottom: 2px solid #4CAF50; /* Lighter green for a fresh look */
+    border-bottom: 2px solid #28a745; /* Green border */
     padding-bottom: 10px;
 }
 
@@ -69,16 +67,10 @@ body {
     font-weight: bold;
     background-color: #f9f9f9;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-.course-item:hover {
-    background-color: #e1f5fe; /* Light blue on hover */
-    transform: scale(1.02); /* Slight zoom effect */
 }
 
 .copy-button {
-    background-color: #4CAF50; /* Fresh green */
+    background-color: #28a745; /* Green button */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -89,16 +81,15 @@ body {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .copy-button:hover {
-    background-color: #388e3c; /* Darker green on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #218838; /* Darker green on hover */
 }
 
 .course-code {
-    background-color: #4CAF50; /* Fresh green */
+    background-color: #28a745; /* Green button */
     color: white;
     border: none;
     padding: 5px;
@@ -106,12 +97,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .course-code:hover {
-    background-color: #388e3c; /* Darker green on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #218838; /* Darker green on hover */
 }
 
 /* Responsive Design */
