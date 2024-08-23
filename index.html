@@ -15,71 +15,315 @@
             color: #333;
             margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
-        .course-container {
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .column {
+            width: 30%;
             background-color: white;
-            padding: 20px;
+            padding: 10px;
+            margin: 10px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 1200px;
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             margin-bottom: 20px;
         }
-        .course-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
         .course-item {
-            width: 48%;
             background-color: #e6e6e6;
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 8px;
+            padding: 8px;
             border-radius: 4px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .course-code {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.1em;
+        }
+        .course-title {
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <div class="course-container">
-        <h1>Course Codes</h1>
-        <div class="course-list">
+    <h1>Course Codes</h1>
+    <div class="container">
+        <!-- Main Courses -->
+        <div class="column">
+            <h2>درس های اصلی (۵۹ واحد)</h2>
             <div class="course-item">
-                <div class="course-code">KBT004</div>
-                <div>Data Structures</div>
+                <div class="course-code">4628102126</div>
+                <div class="course-title">آز_ریز_پردازنده</div>
             </div>
             <div class="course-item">
-                <div class="course-code">KBT007</div>
-                <div>Algorithm Design</div>
+                <div class="course-code">4628181640</div>
+                <div class="course-title">آز_مدار_منطقی_و_معماری_کامپیوتر</div>
             </div>
             <div class="course-item">
-                <div class="course-code">KBT010</div>
-                <div>Software Engineering</div>
+                <div class="course-code">4628147685</div>
+                <div class="course-title">مدار_الکتریکی</div>
             </div>
             <div class="course-item">
-                <div class="course-code">KBT013</div>
-                <div>Database Systems</div>
+                <div class="course-code">4628129880</div>
+                <div class="course-title">ریاضیات_گسسته</div>
             </div>
             <div class="course-item">
-                <div class="course-code">KBT015</div>
-                <div>Computer Networks</div>
+                <div class="course-code">4628111667</div>
+                <div class="course-title">برنامه_سازی_پیشرفته</div>
             </div>
             <div class="course-item">
-                <div class="course-code">KBT017</div>
-                <div>Artificial Intelligence</div>
+                <div class="course-code">4628135313</div>
+                <div class="course-title">سیگنالها_و_سیستم_ها</div>
             </div>
-            <!-- Add more course items as needed -->
+            <div class="course-item">
+                <div class="course-code">4628130341</div>
+                <div class="course-title">ریز_پردازنده_و_زبان_اسمبلی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628135451</div>
+                <div class="course-title">شبکه_های_کامپیوتری</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628155511</div>
+                <div class="course-title">هوش_مصنوعی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628132653</div>
+                <div class="course-title">ساختمان_داده</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628147873</div>
+                <div class="course-title">مدار_منطقی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628153620</div>
+                <div class="course-title">نظریه_زبانها_و_ماشین_ها</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628130407</div>
+                <div class="course-title">زبان_تخصصی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628127605</div>
+                <div class="course-title">روش_پژوهش_و_ارائه</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628129896</div>
+                <div class="course-title">ریاضیات_مهندسی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628150474</div>
+                <div class="course-title">معماری_کامپیوتر</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628169362</div>
+                <div class="course-title">سیستم_های_عامل</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628137064</div>
+                <div class="course-title">طراحی_الگوریتم</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628164617</div>
+                <div class="course-title">سیستم_های_دیجیتال</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628105622</div>
+                <div class="course-title">اصول_طراحی_کامپایلر</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628102246</div>
+                <div class="course-title">آز_سیستم_عامل</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628101498</div>
+                <div class="course-title">آز_شبکه</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628145941</div>
+                <div class="course-title">مبانی_کامپیوتر</div>
+            </div>
+        </div>
+
+        <!-- Special Focus Courses -->
+        <div class="column">
+            <h2>درس های تمرکزی تخصصی اختیاری (۱۲ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">4628181643</div>
+                <div class="course-title">پیاده_سازی_سیستم_پایگاه_داده</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628144915</div>
+                <div class="course-title">مبانی_داده_کاوی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628164509</div>
+                <div class="course-title">مبانی_بازیابی_اطلاعات_و_جستجوی_وب</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628171999</div>
+                <div class="course-title">سیستم_اطلاعات_مدیریت</div>
+            </div>
+        </div>
+
+        <!-- Elective Courses -->
+        <div class="column">
+            <h2>درس های اختیاری (۸ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">4628135053</div>
+                <div class="course-title">سیستمهای_چند_رسانه_ای</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628102924</div>
+                <div class="course-title">آزمایشگاه_مهندسی_نرم_افزار</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628182893</div>
+                <div class="course-title">کارگاه_برنامه_نویسی_متلب</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628102805</div>
+                <div class="course-title">آز_مدار_الکتریکی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628142462</div>
+                <div class="course-title">گرافیک_کامپیوتری</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628143773</div>
+                <div class="course-title">مبانی_امنیت_سایبری</div>
+            </div>
+        </div>
+
+        <!-- Prerequisite Courses -->
+        <div class="column">
+            <h2>درس های آمادگی یا پیشنیاز (۶ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">55001</div>
+                <div class="course-title">ریاضیات_پایه</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">55005</div>
+                <div class="course-title">آمار_احتمالات</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">99093</div>
+                <div class="course-title">زبان_پایه</div>
+            </div>
+        </div>
+
+        <!-- Software Engineering Specialization -->
+        <div class="column">
+            <h2>درس های تخصصی گرایش نرم افزار (۱۹ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">4628117515</div>
+                <div class="course-title">تحلیل_طراحی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628114001</div>
+                <div class="course-title">پایگاه_داده</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628137355</div>
+                <div class="course-title">طراحی_زبان</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628122750</div>
+                <div class="course-title">مدیریت_کیفیت_نرم_افزار</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628135698</div>
+                <div class="course-title">تحلیل_و_طراحی_سیستم</div>
+            </div>
+        </div>
+
+        <!-- IT Specialization -->
+        <div class="column">
+            <h2>درس های تخصصی گرایش فناوری اطلاعات (۲۱ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">4628114947</div>
+                <div class="course-title">پروژه_فناوری_اطلاعات</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628162051</div>
+                <div class="course-title">یکپارچه_سازی_کاربرد_های_سازمانی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628148579</div>
+                <div class="course-title">مدیریت_پروژه_های_فناوری_اطلاعات</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628135414</div>
+                <div class="course-title">مدیریت_شبکه_و_سیستم</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628126218</div>
+                <div class="course-title">امنیت_فناوری_اطلاعات</div>
+            </div>
+        </div>
+
+        <!-- Basic Courses -->
+        <div class="column">
+            <h2>درس های پایه (۲۰ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">4628160442</div>
+                <div class="course-title">کارگاه_کامپیوتر</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628102515</div>
+                <div class="course-title">آز_فیزیک_2</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628107851</div>
+                <div class="course-title">آمار_احتمالات_مهندسی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628123707</div>
+                <div class="course-title">فیزیک_پایه</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628142705</div>
+                <div class="course-title">شیمی_پایه</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">4628102434</div>
+                <div class="course-title">ریاضیات_پیشرفته</div>
+            </div>
+        </div>
+
+        <!-- General Courses -->
+        <div class="column">
+            <h2>درس های عمومی (۲۶‌ واحد)</h2>
+            <div class="course-item">
+                <div class="course-code">99079</div>
+                <div class="course-title">تربیت_بدنی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">99062</div>
+                <div class="course-title">ورزش_1</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">90128</div>
+                <div class="course-title">دانش_خانواده_و_جمعیت</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">99088</div>
+                <div class="course-title">آشنایی_با_حوزه_های_علمی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">99097</div>
+                <div class="course-title">مهارت_های_زندگی</div>
+            </div>
+            <div class="course-item">
+                <div class="course-code">99072</div>
+                <div class="course-title">آشنایی_با_ادبیات_دینی</div>
+            </div>
         </div>
     </div>
 </body>
