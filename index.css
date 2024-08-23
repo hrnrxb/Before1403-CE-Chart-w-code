@@ -191,7 +191,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .header {
         font-size: 1.1rem; /* Further adjust header size */
     }
