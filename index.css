@@ -80,6 +80,11 @@ body {
     border-radius: 5px;
     font-size: 1.25rem; /* Use relative units */
     font-family: 'IranSans', sans-serif;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color change */
+}
+
+.course-item.copied {
+    background-color: #f8d7da; /* Slight red background to indicate successful copy */
 }
 
 .course-item span {
@@ -102,8 +107,6 @@ body {
     align-items: center; /* Center text vertically */
     width: auto; /* Allow the width to fit the content */
     text-align: center; /* Center the text horizontally */
-}
-
 }
 
 .copy-button:hover {
