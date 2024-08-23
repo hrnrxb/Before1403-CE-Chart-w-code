@@ -39,7 +39,7 @@ body {
 
 /* Style for the informational box */
 .info-box {
-    background-color: #ffffe0; /* Light yellow background */
+    background-color: #c7c87e; /* Light yellow background */
     color: #333; /* Dark text for contrast */
     padding: 10px; /* Padding inside the box */
     margin-bottom: 15px; /* Space below the box */
@@ -53,6 +53,7 @@ body {
     z-index: 10; /* Ensure the box stays above other content */
     width: 100%; /* Full width of its container */
     background: linear-gradient(135deg, #ffffe0 0%, #f9f9f9 100%); /* Gradient background for visual interest */
+    opacity: 0.6; /* Adjust opacity here (0.0 - fully transparent, 1.0 - fully opaque) */
 }
 
 /* Adjustments for responsiveness */
