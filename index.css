@@ -4,8 +4,8 @@ body {
     background-color: #7d7d7d; /* Light gray background */
     margin: 0;
     padding: 0;
+    text-align: center;
     color: #333;
-    font-weight: bold;
 }
 
 .header {
@@ -13,15 +13,13 @@ body {
     color: #940a0a; /* Red header text */
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
 }
 
 .sub-header {
     margin-top: 10px;
     color: #940a0a; /* Red sub-header text */
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    text-align: center;
 }
 
 .sub-header a {
@@ -56,13 +54,14 @@ body {
     margin: 20px 0;
     border-bottom: 2px solid #28a745; /* Green border */
     padding-bottom: 10px;
-    text-align: center;
 }
 
 .course-item {
     display: flex;
+    justify-content: space-between; /* Ensure items are spaced between */
     align-items: center;
     margin-bottom: 10px;
+    text-align: right;
     padding: 10px;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -70,12 +69,11 @@ body {
     background-color: #f9f9f9;
     border-radius: 5px;
     font-size: 20px;
-    justify-content: space-between; /* Align items to the left and right */
+    font-family: 'IranSans', sans-serif; /* Changed font for course names */
 }
 
 .course-item span {
-    flex: 1;
-    text-align: left; /* Ensure text is left-aligned */
+    margin-right: 24px; /* Space for the button */
 }
 
 .copy-button {
