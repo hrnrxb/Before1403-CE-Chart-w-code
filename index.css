@@ -12,20 +12,20 @@ body {
 
 .header {
     margin-top: 20px;
-    color: blue;
+    color: #003366; /* Darker blue for a more elegant look */
     font-size: 24px;
     font-weight: bold;
 }
 
 .sub-header {
     margin-top: 10px;
-    color: blue;
+    color: #003366; /* Darker blue for consistency */
     font-size: 20px;
     font-weight: bold;
 }
 
 .sub-header a {
-    color: blue;
+    color: #003366; /* Darker blue for consistency */
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -34,6 +34,7 @@ body {
 
 .sub-header a:hover {
     text-decoration: underline;
+    color: #0056b3; /* Slightly lighter blue on hover */
 }
 
 .course-container {
@@ -42,7 +43,7 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
     position: relative;
     overflow-y: auto;
     max-height: 80vh;
@@ -53,7 +54,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     margin: 20px 0;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #4CAF50; /* Lighter green for a fresh look */
     padding-bottom: 10px;
 }
 
@@ -68,10 +69,16 @@ body {
     font-weight: bold;
     background-color: #f9f9f9;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.course-item:hover {
+    background-color: #e1f5fe; /* Light blue on hover */
+    transform: scale(1.02); /* Slight zoom effect */
 }
 
 .copy-button {
-    background-color: green;
+    background-color: #4CAF50; /* Fresh green */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -82,14 +89,16 @@ body {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .copy-button:hover {
-    background-color: darkgreen;
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 .course-code {
-    background-color: green;
+    background-color: #4CAF50; /* Fresh green */
     color: white;
     border: none;
     padding: 5px;
@@ -97,10 +106,12 @@ body {
     cursor: pointer;
     border-radius: 5px;
     display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .course-code:hover {
-    background-color: darkgreen;
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Responsive Design */
