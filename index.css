@@ -159,6 +159,7 @@ body {
     vertical-align: middle;
     line-height: 1;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .copy-button span {
