@@ -56,13 +56,14 @@ body {
     height: 80vh; /* Adjust the height as needed */
     overflow: hidden; /* Hide overflow in the outer container */
     border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for the container */
+    padding: 10px; /* Padding inside the container */
 }
 
 /* Inner scrollable container */
 .course-container > div {
     height: 100%;
     overflow-y: auto; /* Add vertical scrollbar if needed */
-    padding: 10px; /* Add padding inside the scrollable area */
 }
 
 /* Style for course categories and items */
@@ -88,9 +89,9 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 /* Button hover and active states */
@@ -98,53 +99,24 @@ body {
     background-color: #218838;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header {
-        font-size: 1.25rem; /* Adjust header size */
-    }
-
-    .sub-header {
-        font-size: 1.1rem; /* Adjust sub-header size */
-    }
-
-    .course-category {
-        font-size: 1.4rem; /* Adjust category size */
-    }
-
-    .course-container {
-        width: 95%; /* Slightly increase width for small screens */
-        padding: 15px;
-    }
-
-    .course-item {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to start */
-    }
-
-    .copy-button {
-        margin-top: 10px; /* Add margin for spacing */
-    }
+.copy-button:active {
+    background-color: #1e7e34;
 }
 
-@media (max-width: 480px) {
-    .header {
-        font-size: 1.1rem; /* Further adjust header size */
-    }
+/* Additional styles for overall layout and responsiveness */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .sub-header {
-        font-size: 1rem; /* Further adjust sub-header size */
-    }
-
+@media (max-width: 768px) {
     .course-category {
-        font-size: 1.2rem; /* Further adjust category size */
-    }
-
-    .course-item {
-        font-size: 1rem; /* Further adjust course item size */
+        font-size: 18px;
     }
 
     .copy-button {
-        font-size: 0.85rem; /* Adjust button size */
+        font-size: 14px;
+        padding: 4px 8px;
     }
 }
