@@ -37,6 +37,35 @@ body {
     }
 }
 
+/* Style for the informational box */
+.info-box {
+    background-color: #f7f986; /* Light yellow background */
+    color: #333; /* Dark text for contrast */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 1.1rem; /* Adjust font size for readability */
+    font-weight: bold;
+    text-align: center; /* Center text */
+    max-width: 90%; /* Responsive width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Responsive Design for the info box */
+@media (max-width: 768px) {
+    .info-box {
+        font-size: 1rem; /* Adjust font size on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        font-size: 0.9rem; /* Further adjust font size */
+        padding: 8px; /* Further adjust padding */
+    }
+}
+
 /* General Styles */
 .header {
     margin-top: 20px;
