@@ -4,7 +4,6 @@ body {
     background-color: #7d7d7d; /* Light gray background */
     margin: 0;
     padding: 0;
-    text-align: center;
     color: #333;
     font-weight: bold;
 }
@@ -14,6 +13,7 @@ body {
     color: #940a0a; /* Red header text */
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 }
 
 .sub-header {
@@ -21,6 +21,7 @@ body {
     color: #940a0a; /* Red sub-header text */
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 .sub-header a {
@@ -55,13 +56,13 @@ body {
     margin: 20px 0;
     border-bottom: 2px solid #28a745; /* Green border */
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .course-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    text-align: right;
     padding: 10px;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -69,10 +70,10 @@ body {
     background-color: #f9f9f9;
     border-radius: 5px;
     font-size: 20px;
+    justify-content: space-between; /* Align items to the left and right */
 }
 
 .course-item span {
-    margin-right: 24px; /* 24px to add space (approx. 3 tabs) */
     flex: 1;
     text-align: left; /* Ensure text is left-aligned */
 }
@@ -88,7 +89,6 @@ body {
     transition: background-color 0.3s; /* Smooth transition */
     display: inline-block;
     width: auto; /* Adjust size to fit content */
-    margin-left: auto; /* Align to the left side of the container */
 }
 
 .copy-button:hover {
