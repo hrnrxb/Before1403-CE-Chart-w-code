@@ -91,17 +91,19 @@ body {
     background-color: #28a745; /* Green button */
     color: white;
     border: none;
-    padding: 5px; /* Minimal padding to fit the content */
+    padding: 5px 8px; /* Adjust padding for a better fit */
     font-size: 0.9rem; /* Use relative units */
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s; /* Smooth transition */
     white-space: nowrap; /* Prevent text from wrapping */
-    display: inline-block; /* Ensure the button fits the content size */
+    display: inline-flex; /* Use inline-flex for better alignment control */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
     width: auto; /* Allow the width to fit the content */
     text-align: center; /* Center the text horizontally */
-    vertical-align: middle; /* Center the text vertically */
-    line-height: 1.5; /* Adjust line-height for better vertical alignment */
+}
+
 }
 
 .copy-button:hover {
