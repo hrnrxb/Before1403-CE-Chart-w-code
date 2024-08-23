@@ -71,7 +71,7 @@ body {
 }
 
 .course-item span {
-    margin-right: 16px; /* Add margin for spacing */
+    margin-right: 16px; /* Adjusted to 24px to add space (approx. 3 tabs) */
 }
 
 .copy-button {
@@ -83,7 +83,6 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s; /* Smooth transition */
-}
 
 .copy-button:hover {
     background-color: #218838; /* Darker green on hover */
