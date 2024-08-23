@@ -58,7 +58,6 @@ body {
 
 .course-item {
     display: flex;
-    justify-content: space-between; /* Space between name and button */
     align-items: center;
     margin-bottom: 10px;
     text-align: right;
@@ -69,6 +68,10 @@ body {
     background-color: #f9f9f9;
     border-radius: 5px;
     font-size: 20px;
+}
+
+.course-item span {
+    margin-right: 16px; /* Add margin for spacing */
 }
 
 .copy-button {
@@ -96,10 +99,6 @@ body {
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s; /* Smooth transition */
-}
-
-.course-code:hover {
-    background-color: #218838; /* Darker green on hover */
 }
 
 /* Responsive Design */
