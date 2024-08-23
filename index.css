@@ -53,7 +53,7 @@ body {
 }
 
 /* Responsive Design for the info box */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .info-box {
         font-size: 1rem; /* Adjust font size on smaller screens */
         padding: 10px; /* Adjust padding */
