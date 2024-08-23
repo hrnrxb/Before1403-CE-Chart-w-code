@@ -149,9 +149,11 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.2s; /* Smooth transition */
     white-space: nowrap;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
     text-align: center;
     vertical-align: middle;
