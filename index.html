@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl>
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کد دروس کارشناسی مهندسی کامپیوتر</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IranSans:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'XB Zar', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            margin-top: 20px;
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sub-header {
+            margin-top: 10px;
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .course-container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        .course-category {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px 0;
+            border-bottom: 2px solid green;
+            padding-bottom: 10px;
+        }
+        .course-item {
+            display: flex;
+            align-items: center; /* Aligns items vertically */
+            margin-bottom: 10px; /* Adjusts space between courses */
+            text-align: right;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            font-weight: bold;
+            
+        }
+        .copy-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+        }
+        .copy-button:hover {
+            background-color: darkgreen;
+        }
+        .course-code {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .course-code:hover {
+            background-color: darkgreen;
+        }
+    </style>
 </head>
 <body>
     <div class="header">💻 کد دروس کارشناسی مهندسی کامپیوتر (گرایش نرم افزار و آیتی) دانشگاه آزاد شیراز 👇</div>
@@ -14,7 +91,7 @@
         <a href="https://t.me/IAUCourseExpgroup" target="_blank" style="color: blue; font-size: 26px; font-weight: bold;">گروه تجربیات انتخاب واحد</a> | 
         <a href="https://t.me/jozveiau" target="_blank" style="color: blue; font-size: 26px; font-weight: bold;">کانال جزوه</a> | 
         <a href="https://t.me/computeriaushz" target="_blank" style="color: blue; font-size: 26px; font-weight: bold;">گروه کامپیوتر آزاد شیراز</a> | 
-        <a href="https://t.me/DevLeap" target="_blank" style="color: blue; font-size: 26px; font-weight: bold;">گروه DevLeap</a>
+        <a href="https://t.me/DevLeap" target="_blank" style="color: blue; font-size: 26px; font-weight: bold;">DevLeap گروه</a>
     </div>
     <div class="course-container">
 
@@ -467,25 +544,14 @@
     </div>
 
     <script>
-    document.querySelectorAll('.copy-button').forEach(button => {
-        button.addEventListener('click', function() {
-            // Find the code content to copy
-            const codeContent = this.closest('.course-item').querySelector('code').textContent;
-    
-            // Copy the code content to clipboard
-            navigator.clipboard.writeText(codeContent).then(() => {
-                const courseItem = this.closest('.course-item');
-                courseItem.classList.add('copied');
-    
-                // Remove the 'copied' class after 2 seconds
-                setTimeout(() => {
-                    courseItem.classList.remove('copied');
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
-        });
-    });
+        function copyToClipboard(code) {
+            const el = document.createElement('textarea');
+            el.value = code;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
     </script>
 </body>
 </html>
