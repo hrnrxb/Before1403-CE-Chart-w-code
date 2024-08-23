@@ -43,11 +43,15 @@
             padding-bottom: 10px;
         }
         .course-item {
-            margin: 10px 0;
+            display: flex;
+            align-items: center; /* Aligns items vertically */
+            margin-bottom: 10px; /* Adjusts space between courses */
             text-align: left;
             padding: 10px;
             border-bottom: 1px solid #ddd;
             position: relative;
+            font-weight: bold;
+            
         }
         .copy-button {
             background-color: green;
@@ -60,6 +64,7 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+            margin-left: 10px;
         }
         .copy-button:hover {
             background-color: darkgreen;
