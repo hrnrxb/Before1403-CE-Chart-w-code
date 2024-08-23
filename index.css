@@ -99,6 +99,9 @@ body {
     white-space: nowrap; /* Prevent text from wrapping */
     display: inline-block; /* Ensure the button fits the content size */
     width: auto; /* Allow the width to fit the content */
+    text-align: center; /* Center the text horizontally */
+    vertical-align: middle; /* Center the text vertically */
+    line-height: 1.5; /* Adjust line-height for better vertical alignment */
 }
 
 .copy-button:hover {
