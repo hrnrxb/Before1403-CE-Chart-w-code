@@ -91,12 +91,13 @@ body {
     background-color: #28a745; /* Green button */
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 8px; /* Adjust padding for a better fit */
     font-size: 0.9rem; /* Use relative units */
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s; /* Smooth transition */
-    width: auto;
+    width: auto; /* Allow button to fit content */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .copy-button:hover {
