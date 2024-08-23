@@ -6,6 +6,7 @@ body {
     padding: 0;
     text-align: center;
     color: #333;
+    font-weight: bold;
 }
 
 .header {
@@ -18,7 +19,7 @@ body {
 .sub-header {
     margin-top: 10px;
     color: #940a0a; /* Red sub-header text */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
