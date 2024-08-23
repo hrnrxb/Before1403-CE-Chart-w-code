@@ -58,10 +58,11 @@ body {
     border-radius: 8px; /* Rounded corners */
     background-color: #fff; /* White background for the container */
     padding: 10px; /* Padding inside the container */
+    position: relative; /* Position relative for inner div */
 }
 
 /* Inner scrollable container */
-.course-container > div {
+.course-container > .scrollable-content {
     height: 100%;
     overflow-y: auto; /* Add vertical scrollbar if needed */
 }
