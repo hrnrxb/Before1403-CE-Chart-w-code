@@ -43,11 +43,11 @@ body {
     color: #333; /* Dark text for contrast */
     padding: 15px;
     margin: 20px auto; /* Center the box horizontally with margin auto */
-    border-radius: 8px;
-    font-size: 1.1rem; /* Adjust font size for readability */
+    border-radius: 10px;
+    font-size: 1.2rem; /* Adjust font size for readability */
     font-weight: bold;
     text-align: center; /* Center text */
-    max-width: 80%; /* Limit width to 80% of the container */
+    max-width: 60%; /* Limit width to 80% of the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
     line-height: 1.5; /* Improve line spacing */
 }
