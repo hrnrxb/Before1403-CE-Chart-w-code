@@ -39,16 +39,17 @@ body {
 
 /* Style for the informational box */
 .info-box {
-    background-color: #f7f986; /* Light yellow background */
+    background-color: #ffffe0; /* Light yellow background */
     color: #333; /* Dark text for contrast */
     padding: 15px;
-    margin: 20px auto;
+    margin: 20px auto; /* Center the box horizontally with margin auto */
     border-radius: 8px;
     font-size: 1.1rem; /* Adjust font size for readability */
     font-weight: bold;
     text-align: center; /* Center text */
-    max-width: 90%; /* Responsive width */
+    max-width: 80%; /* Limit width to 80% of the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    line-height: 1.5; /* Improve line spacing */
 }
 
 /* Responsive Design for the info box */
@@ -56,6 +57,7 @@ body {
     .info-box {
         font-size: 1rem; /* Adjust font size on smaller screens */
         padding: 10px; /* Adjust padding */
+        max-width: 90%; /* Slightly increase width for small screens */
     }
 }
 
@@ -63,8 +65,10 @@ body {
     .info-box {
         font-size: 0.9rem; /* Further adjust font size */
         padding: 8px; /* Further adjust padding */
+        max-width: 95%; /* Further increase width for very small screens */
     }
 }
+
 
 /* General Styles */
 .header {
