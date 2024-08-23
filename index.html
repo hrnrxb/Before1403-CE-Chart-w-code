@@ -1,330 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Codes</title>
     <style>
-        @page {
-            size: A4 landscape;
-            margin: 1in;
-        }
         body {
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
-            color: #333;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
+            direction: rtl;
         }
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .column {
-            width: 30%;
-            background-color: white;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box;
-        }
-        h1 {
-            text-align: center;
+        .course-category {
             margin-bottom: 20px;
         }
-        .course-item {
-            background-color: #e6e6e6;
-            margin-bottom: 8px;
-            padding: 8px;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .course-code {
+        .course-name {
+            font-size: 18px;
             font-weight: bold;
-            font-size: 1.1em;
+            margin-bottom: 10px;
+            text-decoration: none;
         }
-        .course-title {
-            font-size: 0.9em;
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-item {
+            margin-bottom: 10px;
+        }
+        .copy-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
         }
     </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('کد درس کپی شد: ' + text);
+            }, function() {
+                alert('مشکلی در کپی کردن کد رخ داد.');
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1>Course Codes</h1>
-    <div class="container">
-        <!-- Main Courses -->
-        <div class="column">
-            <h2>درس های اصلی (۵۹ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628102126</div>
-                <div class="course-title">آز_ریز_پردازنده</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628181640</div>
-                <div class="course-title">آز_مدار_منطقی_و_معماری_کامپیوتر</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628147685</div>
-                <div class="course-title">مدار_الکتریکی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628129880</div>
-                <div class="course-title">ریاضیات_گسسته</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628111667</div>
-                <div class="course-title">برنامه_سازی_پیشرفته</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628135313</div>
-                <div class="course-title">سیگنالها_و_سیستم_ها</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628130341</div>
-                <div class="course-title">ریز_پردازنده_و_زبان_اسمبلی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628135451</div>
-                <div class="course-title">شبکه_های_کامپیوتری</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628155511</div>
-                <div class="course-title">هوش_مصنوعی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628132653</div>
-                <div class="course-title">ساختمان_داده</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628147873</div>
-                <div class="course-title">مدار_منطقی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628153620</div>
-                <div class="course-title">نظریه_زبانها_و_ماشین_ها</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628130407</div>
-                <div class="course-title">زبان_تخصصی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628127605</div>
-                <div class="course-title">روش_پژوهش_و_ارائه</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628129896</div>
-                <div class="course-title">ریاضیات_مهندسی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628150474</div>
-                <div class="course-title">معماری_کامپیوتر</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628169362</div>
-                <div class="course-title">سیستم_های_عامل</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628137064</div>
-                <div class="course-title">طراحی_الگوریتم</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628164617</div>
-                <div class="course-title">سیستم_های_دیجیتال</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628105622</div>
-                <div class="course-title">اصول_طراحی_کامپایلر</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628102246</div>
-                <div class="course-title">آز_سیستم_عامل</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628101498</div>
-                <div class="course-title">آز_شبکه</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628145941</div>
-                <div class="course-title">مبانی_کامپیوتر</div>
-            </div>
-        </div>
-
-        <!-- Special Focus Courses -->
-        <div class="column">
-            <h2>درس های تمرکزی تخصصی اختیاری (۱۲ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628181643</div>
-                <div class="course-title">پیاده_سازی_سیستم_پایگاه_داده</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628144915</div>
-                <div class="course-title">مبانی_داده_کاوی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628164509</div>
-                <div class="course-title">مبانی_بازیابی_اطلاعات_و_جستجوی_وب</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628171999</div>
-                <div class="course-title">سیستم_اطلاعات_مدیریت</div>
-            </div>
-        </div>
-
-        <!-- Elective Courses -->
-        <div class="column">
-            <h2>درس های اختیاری (۸ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628135053</div>
-                <div class="course-title">سیستمهای_چند_رسانه_ای</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628102924</div>
-                <div class="course-title">آزمایشگاه_مهندسی_نرم_افزار</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628182893</div>
-                <div class="course-title">کارگاه_برنامه_نویسی_متلب</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628102805</div>
-                <div class="course-title">آز_مدار_الکتریکی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628142462</div>
-                <div class="course-title">گرافیک_کامپیوتری</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628143773</div>
-                <div class="course-title">مبانی_امنیت_سایبری</div>
-            </div>
-        </div>
-
-        <!-- Prerequisite Courses -->
-        <div class="column">
-            <h2>درس های آمادگی یا پیشنیاز (۶ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">55001</div>
-                <div class="course-title">ریاضیات_پایه</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">55005</div>
-                <div class="course-title">آمار_احتمالات</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">99093</div>
-                <div class="course-title">زبان_پایه</div>
-            </div>
-        </div>
-
-        <!-- Software Engineering Specialization -->
-        <div class="column">
-            <h2>درس های تخصصی گرایش نرم افزار (۱۹ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628117515</div>
-                <div class="course-title">تحلیل_طراحی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628114001</div>
-                <div class="course-title">پایگاه_داده</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628137355</div>
-                <div class="course-title">طراحی_زبان</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628122750</div>
-                <div class="course-title">مدیریت_کیفیت_نرم_افزار</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628135698</div>
-                <div class="course-title">تحلیل_و_طراحی_سیستم</div>
-            </div>
-        </div>
-
-        <!-- IT Specialization -->
-        <div class="column">
-            <h2>درس های تخصصی گرایش فناوری اطلاعات (۲۱ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628114947</div>
-                <div class="course-title">پروژه_فناوری_اطلاعات</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628162051</div>
-                <div class="course-title">یکپارچه_سازی_کاربرد_های_سازمانی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628148579</div>
-                <div class="course-title">مدیریت_پروژه_های_فناوری_اطلاعات</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628135414</div>
-                <div class="course-title">مدیریت_شبکه_و_سیستم</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628126218</div>
-                <div class="course-title">امنیت_فناوری_اطلاعات</div>
-            </div>
-        </div>
-
-        <!-- Basic Courses -->
-        <div class="column">
-            <h2>درس های پایه (۲۰ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">4628160442</div>
-                <div class="course-title">کارگاه_کامپیوتر</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628102515</div>
-                <div class="course-title">آز_فیزیک_2</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628107851</div>
-                <div class="course-title">آمار_احتمالات_مهندسی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628123707</div>
-                <div class="course-title">فیزیک_پایه</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628142705</div>
-                <div class="course-title">شیمی_پایه</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">4628102434</div>
-                <div class="course-title">ریاضیات_پیشرفته</div>
-            </div>
-        </div>
-
-        <!-- General Courses -->
-        <div class="column">
-            <h2>درس های عمومی (۲۶‌ واحد)</h2>
-            <div class="course-item">
-                <div class="course-code">99079</div>
-                <div class="course-title">تربیت_بدنی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">99062</div>
-                <div class="course-title">ورزش_1</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">90128</div>
-                <div class="course-title">دانش_خانواده_و_جمعیت</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">99088</div>
-                <div class="course-title">آشنایی_با_حوزه_های_علمی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">99097</div>
-                <div class="course-title">مهارت_های_زندگی</div>
-            </div>
-            <div class="course-item">
-                <div class="course-code">99072</div>
-                <div class="course-title">آشنایی_با_ادبیات_دینی</div>
-            </div>
-        </div>
+    <div class="course-category">
+        <div class="course-name">درس های اصلی (۵۹ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">آز ریز پردازنده<button class="copy-btn" onclick="copyToClipboard('4628102126')">کپی کد</button></li>
+            <li class="course-item">آز مدار منطقی و معماری کامپیوتر<button class="copy-btn" onclick="copyToClipboard('4628181640')">کپی کد</button></li>
+            <li class="course-item">مدار الکتریکی<button class="copy-btn" onclick="copyToClipboard('4628147685')">کپی کد</button></li>
+            <li class="course-item">ریاضیات گسسته<button class="copy-btn" onclick="copyToClipboard('4628129880')">کپی کد</button></li>
+            <li class="course-item">برنامه سازی پیشرفته<button class="copy-btn" onclick="copyToClipboard('4628111667')">کپی کد</button></li>
+            <li class="course-item">سیگنالها و سیستم ها<button class="copy-btn" onclick="copyToClipboard('4628135313')">کپی کد</button></li>
+            <li class="course-item">ریز پردازنده و زبان اسمبلی<button class="copy-btn" onclick="copyToClipboard('4628130341')">کپی کد</button></li>
+            <li class="course-item">شبکه های کامپیوتری<button class="copy-btn" onclick="copyToClipboard('4628135451')">کپی کد</button></li>
+            <li class="course-item">هوش مصنوعی<button class="copy-btn" onclick="copyToClipboard('4628155511')">کپی کد</button></li>
+            <li class="course-item">ساختمان داده<button class="copy-btn" onclick="copyToClipboard('4628132653')">کپی کد</button></li>
+            <li class="course-item">مدار منطقی<button class="copy-btn" onclick="copyToClipboard('4628147873')">کپی کد</button></li>
+            <li class="course-item">نظریه زبانها و ماشین ها<button class="copy-btn" onclick="copyToClipboard('4628153620')">کپی کد</button></li>
+            <li class="course-item">زبان تخصصی<button class="copy-btn" onclick="copyToClipboard('4628130407')">کپی کد</button></li>
+            <li class="course-item">روش پژوهش و ارائه<button class="copy-btn" onclick="copyToClipboard('4628127605')">کپی کد</button></li>
+            <li class="course-item">ریاضیات مهندسی<button class="copy-btn" onclick="copyToClipboard('4628129896')">کپی کد</button></li>
+            <li class="course-item">معماری کامپیوتر<button class="copy-btn" onclick="copyToClipboard('4628150474')">کپی کد</button></li>
+            <li class="course-item">سیستم های عامل<button class="copy-btn" onclick="copyToClipboard('4628169362')">کپی کد</button></li>
+            <li class="course-item">طراحی الگوریتم<button class="copy-btn" onclick="copyToClipboard('4628137064')">کپی کد</button></li>
+            <li class="course-item">سیستم های دیجیتال<button class="copy-btn" onclick="copyToClipboard('4628164617')">کپی کد</button></li>
+            <li class="course-item">اصول طراحی کامپایلر<button class="copy-btn" onclick="copyToClipboard('4628105622')">کپی کد</button></li>
+            <li class="course-item">آز سیستم عامل<button class="copy-btn" onclick="copyToClipboard('4628102246')">کپی کد</button></li>
+            <li class="course-item">آز شبکه<button class="copy-btn" onclick="copyToClipboard('4628101498')">کپی کد</button></li>
+            <li class="course-item">مبانی کامپیوتر<button class="copy-btn" onclick="copyToClipboard('4628145941')">کپی کد</button></li>
+        </ul>
     </div>
+
+    <div class="course-category">
+        <div class="course-name">درس های تمرکزی تخصصی اختیاری (۱۲ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">پیاده سازی سیستم پایگاه داده<button class="copy-btn" onclick="copyToClipboard('4628181643')">کپی کد</button></li>
+            <li class="course-item">مبانی داده کاوی<button class="copy-btn" onclick="copyToClipboard('4628144915')">کپی کد</button></li>
+            <li class="course-item">مبانی بازیابی اطلاعات و جستجوی وب<button class="copy-btn" onclick="copyToClipboard('4628164509')">کپی کد</button></li>
+            <li class="course-item">سیستم اطلاعات مدیریت<button class="copy-btn" onclick="copyToClipboard('4628171999')">کپی کد</button></li>
+        </ul>
+    </div>
+
+    <div class="course-category">
+        <div class="course-name">درس های اختیاری (۸ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">سیستمهای چند رسانه ای<button class="copy-btn" onclick="copyToClipboard('4628135053')">کپی کد</button></li>
+            <li class="course-item">آزمایشگاه مهندسی نرم افزار<button class="copy-btn" onclick="copyToClipboard('4628102924')">کپی کد</button></li>
+            <li class="course-item">کارگاه برنامه نویسی متلب<button class="copy-btn" onclick="copyToClipboard('4628182893')">کپی کد</button></li>
+            <li class="course-item">آز مدار الکتریکی<button class="copy-btn" onclick="copyToClipboard('4628102805')">کپی کد</button></li>
+            <li class="course-item">گرافیک کامپیوتری<button class="copy-btn" onclick="copyToClipboard('4628142462')">کپی کد</button></li>
+            <li class="course-item">مباحث ویژه 1<button class="copy-btn" onclick="copyToClipboard('4628143773')">کپی کد</button></li>
+            <li class="course-item">آز پایگاه داده<button class="copy-btn" onclick="copyToClipboard('4628101485')">کپی کد</button></li>
+        </ul>
+    </div>
+
+    <div class="course-category">
+        <div class="course-name">درس های آمادگی یا پیشنیاز (۶ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">ریاضیات پایه<button class="copy-btn" onclick="copyToClipboard('55001')">کپی کد</button></li>
+            <li class="course-item">آمار احتمالات<button class="copy-btn" onclick="copyToClipboard('55005')">کپی کد</button></li>
+            <li class="course-item">زبان پایه<button class="copy-btn" onclick="copyToClipboard('55011')">کپی کد</button></li>
+        </ul>
+    </div>
+
+        <!-- Specialized Courses for Software Engineering (19 units) -->
+    <div class="course-category">
+        <div class="course-name">درس های تخصصی گرایش نرم افزار (۱۹ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">تحلیل و طراحی<button class="copy-btn" onclick="copyToClipboard('4628117515')">کپی کد</button></li>
+            <li class="course-item">پایگاه داده<button class="copy-btn" onclick="copyToClipboard('4628114001')">کپی کد</button></li>
+            <li class="course-item">طراحی زبان<button class="copy-btn" onclick="copyToClipboard('4628137355')">کپی کد</button></li>
+            <li class="course-item">مهندسی نرم افزار<button class="copy-btn" onclick="copyToClipboard('4628164737')">کپی کد</button></li>
+            <li class="course-item">مهندسی اینترنت<button class="copy-btn" onclick="copyToClipboard('4628151527')">کپی کد</button></li>
+            <li class="course-item">پروژه نرم افزار<button class="copy-btn" onclick="copyToClipboard('4628183688')">کپی کد</button></li>
+            <li class="course-item">کارآموزی<button class="copy-btn" onclick="copyToClipboard('4628156372')">کپی کد</button></li>
+        </ul>
+    </div>
+
+    <!-- Specialized Courses for IT (21 units) -->
+    <div class="course-category">
+        <div class="course-name">درس های تخصصی گرایش فناوری اطلاعات (۲۱ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">پروژه فناوری اطلاعات<button class="copy-btn" onclick="copyToClipboard('4628114947')">کپی کد</button></li>
+            <li class="course-item">یکپارچه سازی کاربرد های سازمانی<button class="copy-btn" onclick="copyToClipboard('4628162051')">کپی کد</button></li>
+            <li class="course-item">مدیریت پروژه های فناوری اطلاعات<button class="copy-btn" onclick="copyToClipboard('4628148579')">کپی کد</button></li>
+            <li class="course-item">اصول مدیریت و برنامه ریزی راهبرد های فناوری اطلاعات<button class="copy-btn" onclick="copyToClipboard('4628105928')">کپی کد</button></li>
+            <li class="course-item">مبانی رایانش امن<button class="copy-btn" onclick="copyToClipboard('4628144960')">کپی کد</button></li>
+            <li class="course-item">تجارت الکترونیکی<button class="copy-btn" onclick="copyToClipboard('4628116851')">کپی کد</button></li>
+            <li class="course-item">اصول فناوری اطلاعات<button class="copy-btn" onclick="copyToClipboard('4628105776')">کپی کد</button></li>
+            <li class="course-item">اقتصاد مهندسی<button class="copy-btn" onclick="copyToClipboard('4628107113')">کپی کد</button></li>
+        </ul>
+    </div>
+
+    <!-- Basic Courses (20 units) -->
+    <div class="course-category">
+        <div class="course-name">درس های پایه (۲۰ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">کارگاه کامپیوتر<button class="copy-btn" onclick="copyToClipboard('4628160442')">کپی کد</button></li>
+            <li class="course-item">آز فیزیک 2<button class="copy-btn" onclick="copyToClipboard('4628102515')">کپی کد</button></li>
+            <li class="course-item">آمار و احتمالات مهندسی<button class="copy-btn" onclick="copyToClipboard('4628107851')">کپی کد</button></li>
+            <li class="course-item">ریاضی 1<button class="copy-btn" onclick="copyToClipboard('4628165140')">کپی کد</button></li>
+            <li class="course-item">ریاضی 2<button class="copy-btn" onclick="copyToClipboard('4628129685')">کپی کد</button></li>
+            <li class="course-item">فیزیک 1<button class="copy-btn" onclick="copyToClipboard('4628141460')">کپی کد</button></li>
+            <li class="course-item">فیزیک 2<button class="copy-btn" onclick="copyToClipboard('4628141492')">کپی کد</button></li>
+            <li class="course-item">معادلات دیفرانسیل<button class="copy-btn" onclick="copyToClipboard('4628150360')">کپی کد</button></li>
+        </ul>
+    </div>
+
+    <!-- General Courses (26 units) -->
+    <div class="course-category">
+        <div class="course-name">درس های عمومی(۲۶‌ واحد):</div>
+        <ul class="course-list">
+            <li class="course-item">تربیت بدنی<button class="copy-btn" onclick="copyToClipboard('99079')">کپی کد</button></li>
+            <li class="course-item">ورزش 1<button class="copy-btn" onclick="copyToClipboard('99062')">کپی کد</button></li>
+            <li class="course-item">دانش خانواده و جمعیت<button class="copy-btn" onclick="copyToClipboard('90128')">کپی کد</button></li>
+            <li class="course-item">زبان فارسی<button class="copy-btn" onclick="copyToClipboard('90029')">کپی کد</button></li>
+            <li class="course-item">تاریخ فرهنگ و تمدن اسلامی<button class="copy-btn" onclick="copyToClipboard('92381')">کپی کد</button></li>
+            <li class="course-item">وصیت نامه امام<button class="copy-btn" onclick="copyToClipboard('99073')">کپی کد</button></li>
+            <li class="course-item">انس با قرآن<button class="copy-btn" onclick="copyToClipboard('99083')">کپی کد</button></li>
+            <li class="course-item">اندیشه 1<button class="copy-btn" onclick="copyToClipboard('90610')">کپی کد</button></li>
+            <li class="course-item">اندیشه 2<button class="copy-btn" onclick="copyToClipboard('98841')">کپی کد</button></li>
+            <li class="course-item">انسان در اسلام<button class="copy-btn" onclick="copyToClipboard('90613')">کپی کد</button></li>
+            <li class="course-item">حقوق اجتماعی و سیاسی<button class="copy-btn" onclick="copyToClipboard('90063')">کپی کد</button></li>
+            <li class="course-item">فلسفه اخلاق<button class="copy-btn" onclick="copyToClipboard('98982')">کپی کد</button></li>
+            <li class="course-item">اخلاق اسلامی<button class="copy-btn" onclick="copyToClipboard('98961')">کپی کد</button></li>
+            <li class="course-item">آیین زندگی<button class="copy-btn" onclick="copyToClipboard('98923')">کپی کد</button></li>
+            <li class="course-item">عرفان عملی اسلامی<button class="copy-btn" onclick="copyToClipboard('98949')">کپی کد</button></li>
+            <li class="course-item">انقلاب اسلامی<button class="copy-btn" onclick="copyToClipboard('90755')">کپی کد</button></li>
+            <li class="course-item">آشنایی با قانون اساسی<button class="copy-btn" onclick="copyToClipboard('90046')">کپی کد</button></li>
+            <li class="course-item">اندیشه سیاسی<button class="copy-btn" onclick="copyToClipboard('90064')">کپی کد</button></li>
+            <li class="course-item">تاریخ تحلیلی صدر اسلام<button class="copy-btn" onclick="copyToClipboard('99041')">کپی کد</button></li>
+            <li class="course-item">تاریخ امامت<button class="copy-btn" onclick="copyToClipboard('90121')">کپی کد</button></li>
+            <li class="course-item">تفسیر موضوعی قرآن<button class="copy-btn" onclick="copyToClipboard('90763')">کپی کد</button></li>
+            <li class="course-item">تفسیر موضوعی نهج البلاغه<button class="copy-btn" onclick="copyToClipboard('90313')">کپی کد</button></li>
+            <li class="course-item">دفاع مقدس<button class="copy-btn" onclick="copyToClipboard('90881')">کپی کد</button></li>
+            <li class="course-item">زبان انگلیسی</li>
+            <ul>
+                <li class="course-item">ترکیبی ۱<button class="copy-btn" onclick="copyToClipboard('99090')">کپی کد</button></li>
+                <li class="course-item">ترکیبی ۲<button class="copy-btn" onclick="copyToClipboard('99091')">کپی کد</button></li>
+                <li class="course-item">ترکیبی ۳<button class="copy-btn" onclick="copyToClipboard('99092')">کپی کد</button></li>
+            </ul>
+        </ul>
+    </div>
+
+    
 </body>
 </html>
